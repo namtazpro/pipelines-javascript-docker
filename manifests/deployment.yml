@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: namtazpropipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: namtazpropipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: namtazpropipelinesjavascriptdocker 
+          image: registry6789.azurecr.io/namtazpropipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
